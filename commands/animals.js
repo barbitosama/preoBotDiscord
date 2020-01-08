@@ -31,7 +31,34 @@ module.exports = async (client, message, args) => {
       .setImage(fox)
       .setFooter("Powered by 'https://randomfox.ca/floof/'");
     message.channel.send(embed);
+  } else if (args[0] === "panda") {
+    const panda = await fetch("https://some-random-api.ml/img/panda")
+      .then(res => res.json())
+      .then(json => json.link);
+    
+    const embed = new MessageEmbed()
+      .setImage(panda)
+      .setFooter("Powered by 'https://some-random-api.ml/img/panda'");
+    message.channel.send(embed);
+  } else if (args[0] === "bird") {
+    const bird = await fetch("https://some-random-api.ml/img/birb")
+      .then(res => res.json())
+      .then(json => json.link);
+    
+    const embed = new MessageEmbed()
+      .setImage(bird)
+      .setFooter("Powered by 'https://some-random-api.ml/img/birb'");
+    message.channel.send(embed);
+  } else if (args[0] === "koala") {
+    const koala = await fetch("https://some-random-api.ml/img/koala")
+      .then(res => res.json())
+      .then(json => json.link);
+    
+    const embed = new MessageEmbed()
+      .setImage(koala)
+      .setFooter("Powered by 'https://some-random-api.ml/img/koala'");
+    message.channel.send(embed);
   } else { 
-    message.channel.send("Les animaux disponibles sont; cat, dog, fox!");
+    message.channel.send("Les animaux disponibles sont; cat, dog, fox, panda, bird, koala!");
   }
 };
