@@ -11,6 +11,7 @@ client.commands.set("sinfo", require("./commands/sinfo.js"));
 client.commands.set("lol", require("./commands/lol.js"));
 client.commands.set("pong", require("./commands/pong.js"));
 client.commands.set("ping", require("./commands/ping.js"));
+client.commands.set("animals", require("./commands/animals.js"));
 
 
 client.on("ready", () => require("./events/ready.js")(client));

@@ -7,7 +7,8 @@
   "author": "<thedarkness355@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "discordjs/discord.js"
+    "discord.js": "discordjs/discord.js",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -15,8 +16,8 @@
   },
   "eslintConfig": {
     "extends": "aqua/node",
-    "rules" : {
-      "linebreak-style" : [
+    "rules": {
+      "linebreak-style": [
         "error",
         "windows"
       ],
@@ -29,7 +30,7 @@
         2
       ],
       "curly": "off",
-      "no-trailing-spaces" :"off"
+      "no-trailing-spaces": "off"
     }
-}
+  }
 }
