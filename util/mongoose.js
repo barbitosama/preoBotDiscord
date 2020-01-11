@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { DBCONNECTION } = require("./config");
+const { DBCONNECTION } = require("../config");
 
 module.exports = {
   init: () => {
@@ -8,7 +8,7 @@ module.exports = {
       useFindAndModify: false,
       autoIndex: false,
       reconnectTries: Number.MAX_VALUE,
-      reconnectInternval: 500,
+      reconnectInterval: 500,
       poolSize: 10,
       bufferMaxEntries: 0,
       connectTimeoutMS: 10000,

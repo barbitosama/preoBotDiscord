@@ -14,7 +14,6 @@ client.commands.set("pong", require("./commands/pong.js"));
 client.commands.set("ping", require("./commands/ping.js"));
 client.commands.set("animals", require("./commands/animals.js"));
 
-
 client.on("ready", () => require("./events/ready.js")(client));
 client.on("message", msg => require("./events/message.js")(client, msg));
 client.on("guildMemberAdd", member => require("./events/guildMemberAdd.js")(client, member));
