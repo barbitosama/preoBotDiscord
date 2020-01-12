@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 const { MessageEmbed } = require("discord.js");
 
-module.exports = async (client, message, args) => {
+exports.run = async (client, message, args) => {
   message.delete({ timeout: 3000 });
 
   if (args[0] === "cat") {
@@ -61,4 +61,8 @@ module.exports = async (client, message, args) => {
   } else { 
     message.channel.send("Les animaux disponibles sont; cat, dog, fox, panda, bird, koala!");
   }
+};
+
+exports.help = {
+  name: "animals"
 };
