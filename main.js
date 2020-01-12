@@ -3,6 +3,7 @@ const { TOKEN, PREFIX } = require("./config");
 const client = new Client({ disableEveryone: true });
 
 client.PREFIX = PREFIX;
+require("./util/functions")(client);
 client.mongoose = require("./util/mongoose");
 client.commands = new Collection();
 
@@ -15,6 +16,7 @@ client.commands.set("ping", require("./commands/ping.js"));
 client.commands.set("animals", require("./commands/animals.js"));
 client.commands.set("eval", require("./commands/eval.js"));
 client.commands.set("help", require("./commands/help.js"));
+client.commands.set("config", require("./commands/config.js"));
 
 
 client.on("ready", () => require("./events/ready.js")(client));
