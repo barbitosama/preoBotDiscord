@@ -7,7 +7,7 @@
   "author": "<thedarkness355@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "discordjs/discord.js",
+    "discord.js": "github:discordjs/discord.js",
     "mongoose": "^5.8.7",
     "node-fetch": "^2.6.0"
   },
