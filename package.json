@@ -8,7 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "discord.js": "github:discordjs/discord.js",
-    "mongoose": "^5.8.7",
+    "mongoose": "^5.13.15",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
